@@ -40,10 +40,6 @@ This project is a frontend clone of the GeeksforGeeks website, built using only 
 
 Contributions are welcome! Please open issues or submit pull requests for improvements.
 
-## License
-
-[Specify your license here, e.g., MIT]
-
 ---
 
 This project is for educational purposes only and is not affiliated with GeeksforGeeks.
