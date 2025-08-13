@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f7fafc;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #008000;
+  color: #fff;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-box {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  width: 220px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.search-box:focus {
+  outline: none;
+  box-shadow: 0 2px 8px #00800033;
+}
+
+/* Navigation */
+nav {
+  background: #006400;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0.5rem 0;
+  gap: 10px;
+}
+
+.nav-links li {
+  margin: 0 12px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background: #fff;
+  color: #008000;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(90deg, #e6ffe6 60%, #fff 100%);
+  text-align: center;
+  padding: 64px 20px 48px 20px;
+  box-shadow: 0 2px 12px rgba(0,128,0,0.04);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #008000;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.cta-btn {
+  background: #008000;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px #00800022;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background: #006400;
+  box-shadow: 0 4px 16px #00800033;
+}
+
+/* Content Section */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,128,0,0.07);
+  padding: 32px 24px 24px 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border-top: 4px solid #008000;
+  position: relative;
+  min-height: 220px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #008000;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card p {
+  color: #444;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.card a {
+  margin-top: auto;
+  color: #006400;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #008000;
+  text-decoration: underline;
+}
+
+.card::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 4px;
+  background: #3cb371;
+  border-radius: 2px;
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  opacity: 0.15;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 18px 0;
+  margin-top: 48px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .content {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 8px;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .nav-links li {
+    margin: 6px 0;
+  }
+  .hero {
+    padding: 36px 8px 28px 8px;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .cta-btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 6px;
+  }
+  .card {
+    padding: 18px 10px 16px 10px;
+    min-height: 160px;
+  }
+  footer {
+    padding: 18px 0;
+  }
+}

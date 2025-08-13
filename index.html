@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeeksforGeeks Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo"><a href="#hero" style="color:inherit;text-decoration:none;">GeeksforGeeks</a></div>
+      <input type="text" class="search-box" placeholder="Search..."/>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#tutorials">Tutorials</a></li>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#jobs">Jobs</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#gate">GATE</a></li>
+      <li><a href="#interview">Interview Experiences</a></li>
+      <li><a href="#aptitude">Aptitude</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Welcome to GeeksforGeeks</h1>
+    <p>Learn coding, solve problems, and crack your dream job!</p>
+    <a href="#tutorials" class="cta-btn">Start Learning</a>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <div class="card" id="tutorials">
+      <h2>Tutorials</h2>
+      <p>Explore arrays, linked lists, trees, and graphs in depth.</p>
+      <a href="#tutorials">Explore Tutorials &rarr;</a>
+    </div>
+    <div class="card" id="practice">
+      <h2>Practice</h2>
+      <p>Practice coding problems and improve your skills.</p>
+      <a href="#practice">Start Practicing &rarr;</a>
+    </div>
+    <div class="card" id="jobs">
+      <h2>Jobs</h2>
+      <p>Find your dream job in tech companies.</p>
+      <a href="#jobs">View Jobs &rarr;</a>
+    </div>
+    <div class="card" id="courses">
+      <h2>Courses</h2>
+      <p>Enroll in top-rated programming and development courses.</p>
+      <a href="#courses">Browse Courses &rarr;</a>
+    </div>
+    <div class="card" id="gate">
+      <h2>GATE</h2>
+      <p>Prepare for GATE with quality study material and practice tests.</p>
+      <a href="#gate">Prepare for GATE &rarr;</a>
+    </div>
+    <div class="card" id="interview">
+      <h2>Interview Experiences</h2>
+      <p>Read real interview experiences from top tech companies.</p>
+      <a href="#interview">Read Experiences &rarr;</a>
+    </div>
+    <div class="card" id="aptitude">
+      <h2>Aptitude</h2>
+      <p>Practice aptitude questions for placements and competitive exams.</p>
+      <a href="#aptitude">Practice Aptitude &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> GeeksforGeeks Clone by Amrit. All rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
