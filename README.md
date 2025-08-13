@@ -2,6 +2,9 @@
 
 This project is a frontend clone of the GeeksforGeeks website, built using only HTML, CSS, and JavaScript. It is fully responsive and aims to closely mimic the look and feel of the original site.
 
+## 🌐 Live Demo
+[View on GitHub Pages](https://amrit3533.github.io/geeksforgeeks-frontend-clone/)  
+
 ## Features
 
 - Fully responsive design for all devices
