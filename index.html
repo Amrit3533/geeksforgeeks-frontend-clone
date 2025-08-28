@@ -6,7 +6,7 @@
   <title>GeeksforGeeks Clone</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="light-mode">
   <!-- Header -->
   <header>
     <div class="container">
@@ -25,8 +25,10 @@
       <li><a href="#gate">GATE</a></li>
       <li><a href="#interview">Interview Experiences</a></li>
       <li><a href="#aptitude">Aptitude</a></li>
+      <li><button id="theme-toggle">Switch to Dark Mode</button></li>
     </ul>
   </nav>
+
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
@@ -72,6 +74,16 @@
       <p>Practice aptitude questions for placements and competitive exams.</p>
       <a href="#aptitude">Practice Aptitude &rarr;</a>
     </div>
+    <div class="card" id="jobs">
+      <h2>Jobs</h2>
+      <p>Find your dream job in tech companies.</p>
+      <a href="#jobs">View Jobs &rarr;</a>
+    </div>
+    <div class="card" id="gate">
+      <h2>GATE</h2>
+      <p>Prepare for GATE with quality study material and practice tests.</p>
+      <a href="#gate">Prepare for GATE &rarr;</a>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -81,5 +93,7 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
